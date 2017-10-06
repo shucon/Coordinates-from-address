@@ -1,8 +1,8 @@
 import subprocess
 import json
 add = raw_input()
-add.replace(" " , "+")
-command = "curl https://maps.googleapis.com/maps/api/geocode/json?address="+add+"&key=AIzaSyCRVnX1xe1phL8ZSKd7-dv5nJK5pYBiAE8"
+#add.replace(" " , "+")
+command = "curl https://maps.googleapis.com/maps/api/geocode/json?address="+add.replace(" ","+")+"&key=AIzaSyCRVnX1xe1phL8ZSKd7-dv5nJK5pYBiAE8"
 output = subprocess.check_output(command, shell=True)
 array = json.loads(output)
 print("Latitude:")
