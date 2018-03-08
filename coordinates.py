@@ -8,4 +8,3 @@ print("Latitude:")
 print(array['results'][0]['geometry']['location']['lat'])
 print("Longitude:")
 print(array['results'][0]['geometry']['location']['lng'])
-
